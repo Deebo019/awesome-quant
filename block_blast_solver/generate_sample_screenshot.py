@@ -4,13 +4,10 @@ Generate a sample Block Blast screenshot for testing.
 This creates a realistic-looking game screenshot that can be used
 to test the Vision API without needing an actual game screenshot.
 """
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-from block_blast_solver import GridRenderer, BlockShape, STANDARD_PIECES
+from grid_renderer import GridRenderer
+from block_shapes import BlockShape, STANDARD_PIECES
 
 
 def generate_sample_screenshot(output_path: str = "sample_screenshot.png"):

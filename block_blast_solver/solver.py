@@ -6,14 +6,14 @@ import numpy as np
 from dataclasses import dataclass
 from functools import lru_cache
 
-from block_blast_solver.config import (
+from config import (
     SCORE_ROW_CLEAR, SCORE_COL_CLEAR, SCORE_HOLE_PENALTY, SCORE_COVERAGE
 )
-from block_blast_solver.utils import (
+from utils import (
     can_place_piece, place_piece, clear_complete_lines, count_holes, 
     calculate_coverage, get_all_valid_placements
 )
-from block_blast_solver.block_shapes import BlockShape
+from block_shapes import BlockShape
 
 
 @dataclass

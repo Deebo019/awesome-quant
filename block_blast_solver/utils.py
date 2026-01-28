@@ -3,7 +3,7 @@ Utility functions for Block Blast Solver.
 """
 from typing import List, Tuple, Optional
 import numpy as np
-from block_blast_solver.config import GRID_SIZE
+from config import GRID_SIZE
 
 
 def validate_grid(grid: np.ndarray) -> bool:

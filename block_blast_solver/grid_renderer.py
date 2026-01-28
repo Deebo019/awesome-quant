@@ -5,7 +5,7 @@ from typing import List, Tuple, Optional
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-from block_blast_solver.config import (
+from config import (
     GRID_SIZE, CELL_SIZE, COLOR_OCCUPIED, COLOR_EMPTY, 
     COLOR_HIGHLIGHT, COLOR_GRID_LINE, COLOR_BLOCK_PREVIEW
 )
