@@ -7,12 +7,12 @@ from PIL import Image
 import os
 from typing import Optional, List, Tuple
 
-from block_blast_solver.image_analyzer import VisionAnalyzer, create_sample_data
-from block_blast_solver.solver import BlockBlastSolver, Move
-from block_blast_solver.grid_renderer import GridRenderer, render_pieces_row
-from block_blast_solver.block_shapes import BlockShape
-from block_blast_solver.config import GRID_SIZE
-from block_blast_solver.utils import validate_grid
+from image_analyzer import VisionAnalyzer, create_sample_data
+from solver import BlockBlastSolver, Move
+from grid_renderer import GridRenderer, render_pieces_row
+from block_shapes import BlockShape
+from config import GRID_SIZE
+from utils import validate_grid
 
 
 # Page configuration

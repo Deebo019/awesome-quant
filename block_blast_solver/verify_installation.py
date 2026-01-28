@@ -78,12 +78,12 @@ def main():
     
     # Check core modules
     print("Checking core modules...")
-    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     try:
-        from block_blast_solver import (
-            BlockShape, BlockBlastSolver, VisionAnalyzer,
-            GridRenderer, validate_grid
-        )
+        from block_shapes import BlockShape
+        from solver import BlockBlastSolver
+        from image_analyzer import VisionAnalyzer
+        from grid_renderer import GridRenderer
+        from utils import validate_grid
         print("✓ All core modules (OK)")
         print()
     except ImportError as e:
@@ -110,7 +110,8 @@ def main():
     print("Running functional tests...")
     try:
         import numpy as np
-        from block_blast_solver import BlockShape, BlockBlastSolver
+        from block_shapes import BlockShape
+        from solver import BlockBlastSolver
         
         # Create a simple test case
         grid = np.zeros((8, 8), dtype=bool)

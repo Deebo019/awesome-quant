@@ -10,9 +10,9 @@ import os
 from PIL import Image
 import numpy as np
 
-from block_blast_solver.config import VISION_PROMPT, OPENAI_MODEL, VISION_MAX_TOKENS, GRID_SIZE
-from block_blast_solver.block_shapes import BlockShape, parse_piece_from_vision
-from block_blast_solver.utils import list_to_grid
+from config import VISION_PROMPT, OPENAI_MODEL, VISION_MAX_TOKENS, GRID_SIZE
+from block_shapes import BlockShape, parse_piece_from_vision
+from utils import list_to_grid
 
 
 class VisionAnalyzer:

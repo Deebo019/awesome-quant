@@ -1,15 +1,12 @@
 """
 Test script to validate Block Blast Solver functionality.
 """
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import numpy as np
-from block_blast_solver import (
-    BlockShape, BlockBlastSolver, solve_puzzle,
-    GridRenderer, create_sample_data, validate_grid
-)
+from block_shapes import BlockShape
+from solver import BlockBlastSolver, solve_puzzle
+from grid_renderer import GridRenderer
+from image_analyzer import create_sample_data
+from utils import validate_grid
 
 
 def test_block_shapes():

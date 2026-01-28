@@ -4,15 +4,10 @@ Example usage of Block Blast Solver API.
 This demonstrates how to use the solver programmatically
 without the Streamlit UI.
 """
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import numpy as np
-from block_blast_solver import (
-    BlockShape, BlockBlastSolver, GridRenderer,
-    STANDARD_PIECES
-)
+from block_shapes import BlockShape, STANDARD_PIECES
+from solver import BlockBlastSolver
+from grid_renderer import GridRenderer
 
 
 def example_1_basic_usage():
