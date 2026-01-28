@@ -3,3 +3,11 @@ env.ps1
 /.quarto/
 github.ipynb
 build.sh
+
+# Block Blast Solver
+block_blast_solver/__pycache__/
+block_blast_solver/*.pyc
+block_blast_solver/.env
+block_blast_solver/.streamlit/
+block_blast_solver/sample_screenshot.png
+block_blast_solver/test_output/
